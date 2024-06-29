@@ -12,7 +12,7 @@ export const routes: Routes = [
   {path: 'eventos2021', component: Eventos2021Component},
   {path: 'eventos2022', component: Eventos2022Component},
   {path: 'eventos2024', component: Eventos2024Component},
-  { path: '**', pathMatch:'full',redirectTo:'home' }
+  { path: '**', redirectTo:'/', pathMatch:'full' }
 
 ];
 
