@@ -7,12 +7,11 @@ import { Eventos2024Component } from './components/eventos2024/eventos2024.compo
 
 
 export const routes: Routes = [
-  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'eventos2021', component: Eventos2021Component},
   {path: 'eventos2022', component: Eventos2022Component},
   {path: 'eventos2024', component: Eventos2024Component},
-  { path: '**', redirectTo:'/', pathMatch:'full' }
+  {path: '', redirectTo:'/home', pathMatch:'full' },
 
 ];
 
